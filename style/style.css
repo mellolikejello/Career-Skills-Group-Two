@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+}
+
+li {
+	display: block;
+	float: left;
+}
+
+header {
+	background: blue;
+	padding: 1em 0;
+	width: 100%;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#static-header {
+	position: relative;
+}
+
+#sticky-header {
+	position: fixed;
+	top: 0;
+}
+
+header li {
+	padding-left: 0.5em;
+}
+
+#welcome-view {
+	height: 95vh;
+	width: 100%;
+}
+
+#welcome-header {
+	padding: 0 5vh;
+}
+
+#welcome-header li {
+	float: right;
+	padding-left: 0.5em;
+}
+
+#welcome-text {
+	clear: both;
+	padding-top: 50vh;
+	padding-left: 5vh;
+}
+
+#content {
+	width: 100%;
+}
+
+img {
+	width: 300px;
+}
+
+.float-left {
+	clear: left;
+	float: left;
+}
+
+.float-right {
+	clear: right;
+	float: right;
+}
+
+.project-info {
+	height: 187px;
+}
