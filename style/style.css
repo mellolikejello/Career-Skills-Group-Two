@@ -1,4 +1,6 @@
 body {
+	//background-color: gray;
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 }
 
@@ -8,7 +10,7 @@ li {
 }
 
 header {
-	background: blue;
+	background: #B8B8B8;
 	height: 2em;
 	padding: 1em 0;
 	width: 100%;
@@ -32,6 +34,8 @@ header li {
 }
 
 #welcome-view {
+	background-color: gray;
+	color: white;
 	height: 95vh;
 	width: 100%;
 }
@@ -40,7 +44,7 @@ header li {
 	padding: 0 5vh;
 }
 
-#welcome-header li {
+#welcome-header a {
 	float: right;
 	padding-left: 0.5em;
 }
@@ -52,7 +56,17 @@ header li {
 }
 
 #content {
+	background-color: white;
 	width: 100%;
+}
+
+.project {
+	margin: auto;
+	width: 80%;
+}
+
+.project:nth-child(1){
+	padding-top: 6em;
 }
 
 img {
@@ -71,4 +85,20 @@ img {
 
 .project-info {
 	height: 187px;
+}
+
+footer {
+	background-color: gray;
+	height: 30vh;
+}
+
+footer img {
+	clear: left;
+	float: left;
+}
+
+footer div {
+	float: left;
+	height: 100%;
+	width: 33%;
 }
