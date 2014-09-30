@@ -1,5 +1,4 @@
-
-.Slidecontainer{
+.slide_container{
 	width:530px;
 	height:350px;
 	padding:20px;
@@ -12,7 +11,7 @@
 	margin:auto;
 	margin-top:600px;
 }
-.Slidecontainer img{
+.slide_container img{
 width:500px;
 
 }

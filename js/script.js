@@ -4,11 +4,13 @@ window.onscroll = onScrolled;
 var didScroll = false;
 
 function init() {
+	initSlider();
 	setInterval(function() {
 		if(didScroll) {
 			didScroll = false;
 			var header = document.querySelector("header");
-			if(window.scrollY >= (0.95 * window.screen.availHeight)) {
+			//var headerHeight = window.getComputedStyle(header).height.slice(0,-2);
+			if(window.scrollY >= (0.95 * window.innerHeight)) {
 				if(header.getAttribute("id") == "static-header") {
 					header.setAttribute("id", "sticky-header");
 				}

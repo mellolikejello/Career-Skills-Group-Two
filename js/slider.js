@@ -9,7 +9,7 @@ var currentPostion = 0;
 var currentImage = 0;
 
 
-function init(){
+function initSlider(){
 	ul = document.getElementById('image_slider');
 	liItems = ul.children;
 	imageNumber = liItems.length;
@@ -101,4 +101,3 @@ function generatePager(imageNumber){
 	var liMargin = parseInt(computedStyle.margin.replace('px',""));
 	pagerDiv.style.width = parseInt((liWidth + liMargin * 2) * imageNumber) + 'px';
 }
-window.onload = init;
