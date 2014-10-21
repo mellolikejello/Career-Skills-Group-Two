@@ -1,7 +1,7 @@
 .slide_container{
-	width:530px;
-	height:350px;
-	padding:20px;
+	width:100%;
+	height:400px;
+	padding:5%;
 	
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
@@ -9,16 +9,17 @@
 	background: none;	
 	text-align: center;
 	margin:auto;
-	margin-top:600px;
+	
 }
 .slide_container img{
-width:500px;
+width:918px;
+height:400px;
 
 }
 .slider_wrapper{
 	overflow: hidden;
 	position:relative;
-	height:280px;
+	height:400px;
 	top:auto;
 }
 #image_slider{
@@ -45,6 +46,7 @@ width:500px;
 }
 .nvgt:hover{
 	opacity: 0.9;
+	cursor:pointer;
 }
 #prev{
 	background: #000 url('../Images/slider/back.png') no-repeat center;

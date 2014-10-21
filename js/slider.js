@@ -17,7 +17,7 @@ function initSlider(){
 	ul.style.width = parseInt(imageWidth * imageNumber) + 'px';
 	prev = document.getElementById("prev");
 	next = document.getElementById("next");
-	generatePager(imageNumber);
+	
 	//.onclike = slide(-1) will be fired when onload;
 	/*
 	prev.onclick = function(){slide(-1);};
@@ -65,39 +65,23 @@ function slideTo(imageToGo){
 function onClickPrev(){
 	if (currentImage == 0){
 		slideTo(imageNumber - 1);
+		console.log("worked");
 	} 		
 	else{
 		slideTo(currentImage - 1);
+		console.log("worked");
 	}		
 }
 
 function onClickNext(){
 	if (currentImage == imageNumber - 1){
 		slideTo(0);
+		console.log("worked");
 	}		
 	else{
 		slideTo(currentImage + 1);
+		console.log("worked");
 	}		
 }
 
-function generatePager(imageNumber){	
-	var pageNumber;
-	var pagerDiv = document.getElementById('pager');
-	for (i = 0; i < imageNumber; i++){
-		var li = document.createElement('li');
-		pageNumber = document.createTextNode(parseInt(i + 1));
-		li.appendChild(pageNumber);
-		pagerDiv.appendChild(li);
-		// add event inside a loop, closure issue.
-		li.onclick = function(i){
-			return function(){
-				slideTo(i);
-			}
-		}(i);
-	}	
-	var computedStyle = document.defaultView.getComputedStyle(li, null);
-	//border width 1px; offsetWidth = 22
-	var liWidth = parseInt(li.offsetWidth);
-	var liMargin = parseInt(computedStyle.margin.replace('px',""));
-	pagerDiv.style.width = parseInt((liWidth + liMargin * 2) * imageNumber) + 'px';
-}
+

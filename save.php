@@ -1,5 +1,7 @@
 <?php
+		
         $filename = $_POST['file'];
+		$align = $_POST['align'];
 		$title = $_POST['title'];
 		$subtitle = $_POST['subtitle'];
 		$mainDesc = $_POST['mainDesc'];
@@ -27,129 +29,113 @@
 		
 		$video= ($_FILES['video']['name']); 
 		
-
+		
+		$fillin= "placeholder.jpg";
         // path and name of the file
 		if ($main == ""){
-			$main= "No Image";
+			$main= $fillin;
 		}
 		if ($s1 == ""){
-			$s1 = "No Image";
+			$s1 = $fillin;
 		}
 		if ($s2 == ""){
-			$s2 = "No Image";
+			$s2 = $fillin;
 		}
 		if ($s3 == ""){
-			$s3 = "No Image";
+			$s3 = $fillin;
 		}
 		if ($s4 == ""){
-			$s4 = "No Image";
+			$s4 = $fillin;
 		}
 		if ($s5 == ""){
-			$s5 = "No Image";
+			$s5 = $fillin;
 		}
 		if ($s6 == ""){
-			$s6 = "No Image";
+			$s6 = $fillin;
 		}
 		
 		if ($t1 == ""){
-			$t1= "No Image";
+			$t1= $fillin;
 		}
 		if ($t2 == ""){
-			$t2 = "No Image";
+			$t2 = $fillin;
 		}
 		if ($t3 == ""){
-			$t3 = "No Image";
+			$t3 = $fillin;
 		}
 		if ($t4 == ""){
-			$t4 = "No Image";
+			$t4 = $fillin;
 		}
 		if ($t5 == ""){
-			$t5 = "No Image";
+			$t5 = $fillin;
 		}
 		if ($t6 == ""){
-			$t6 = "No Image";
+			$t6 = $fillin;
 		}
 		if ($t7 == ""){
-			$t7 = "No Image";
+			$t7 = $fillin;
 		}
 		if ($t8 == ""){
-			$t8 = "No Image";
+			$t8 = $fillin;
 		}
 		if ($video == ""){
-			$video= "No Video";
+			$video= $fillin;
 		}
 		
 		
 		$myfile = fopen("".$filename.".html", "w") or die("Unable to open file!");
-		$txt = <<<END
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>$title</title>
-		<link href="style/slider.css" rel="stylesheet" type="text/css">
-		<script src="js/slider.js"></script>
-	</head>
-	<body>
-		<h1>$title</h1>
-		<h2>$Subtitle</h2>
-		 <div class="slide_container">
-        <div class="slider_wrapper">
-            <ul id="image_slider">
-                <li><img src="Images/$s1"></li>
-                <li><img src="Images/$s2"></li>
-               <li><img src="Images/$s3"></li>
-			   <li><img src="Images/$s4"></li>
-			   <li><img src="Images/$s5"></li>
-			   <li><img src="Images/$s6"></li>
-            </ul>
-            <span class="nvgt" id="prev"></span>
-            <span class="nvgt" id="next"></span>        
-        </div>
-        <ul id="pager">
-        </ul>
-    </div>
-	<div id="Stage1">
-		<h2>Stage 1</h2>
-		<h3>$Stage_1_Weeks</h3>
-		<p class="Desc">$Stage_1_Desc</p>
-	</div>
-	<div id="titles">
-	</div>
-	<div id="Stage2">
-		<h2>Stage 2</h2>
-		<h3>$Stage_2_Weeks</h3>
-		<p class="Desc">$Stage_2_Desc</p>
-	</div>
-	</body>
-</html>
-END;
+		include 'template.php';
 fwrite($myfile, $txt);
 		
 fclose($myfile);
-$main = <<<MAIN
+$mainR = <<<MAIN
 <div class="project">
-            <img class="float-left" src="http://allaboutuarts.ca/wp-content/uploads/2012/07/placeholder.jpg" alt="alt text">
-            <div class="project-info float-right">
-                <h3>Project Title</h3>
-                <p>Project Description</p>
+            <img class="float-right" src="Images/$main" alt="alt text">
+            <div class="project-info_L">
+                <h3>$title</h3>
+				<h4>$subtitle</h2>
+                <p>$mainDesc</p>
+				<a href="$filename.html"><button class="pagelink">See more of this</button></a>
             </div>
         </div>
+		
+MAIN;
+
+$mainL = <<<MAIN
+<div class="project">
+            <img class="float-left" src="Images/$main" alt="alt text">
+            <div class="project-info_R">
+                <h3>$title</h3>
+				<h4>$subtitle</h2>
+                <p>$mainDesc</p>
+				<a href="$filename.html"><button class="pagelink">See more of this</button></a>
+            </div>
+        </div>
+		
 MAIN;
 $filename ='index.html';
 $lines = file($filename);
 $num_lines = count($lines);
 
-if ($num_lines > 17) {
-    array_splice($lines, $num_lines - 17, 0, array($main));
-    file_put_contents($filename, implode('', $lines));
-} else {
-    file_put_contents($filename, PHP_EOL . $content, FILE_APPEND);
+if($align == 'right'){
+	if ($num_lines > 15) {
+		array_splice($lines, $num_lines - 16, 0, array($mainR));
+		file_put_contents($filename, implode('', $lines));
+	} else {
+		file_put_contents($filename, PHP_EOL . $content, FILE_APPEND);
+	}
+
+}
+if($align == 'left'){
+	if ($num_lines > 15) {
+		array_splice($lines, $num_lines - 16, 0, array($mainL));
+		file_put_contents($filename, implode('', $lines));
+	} else {
+		file_put_contents($filename, PHP_EOL . $content, FILE_APPEND);
+	}
+
 }
 
-
-
-
 	
-
+header( 'Location: index.html' ) ;
     ?>

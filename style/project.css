@@ -1,0 +1,175 @@
+body,html{
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+position:relative;
+
+}
+html, body, #container { height: 100%; }
+body > #container{ height: auto; min-height: 2600px; }
+#container{
+position:relative;
+}
+#con{
+
+width:1020px;
+height:100%;
+
+position:absolute;
+top:0;
+left:50%;
+margin-left:-510px;
+}
+#con #header{
+padding-top:2%;
+padding-bottom:2%;
+
+}
+#con #header h1{
+display:inline;
+margin-left:5%;
+font-family: 'Raleway', sans-serif;
+
+}
+#con #header a{
+display:inline;
+float:right;
+margin-right:5%;
+font-size:20pt;
+font-family: 'Roboto', sans-serif;
+text-decoration:none;
+color:#000;
+
+
+}
+#con #header a:hover{
+color:#adadad;
+}
+#con #title{
+}
+#con #title h1{
+margin-left:5%;
+font-family: 'Roboto', sans-serif;
+font-size:50pt;
+}
+#con #title h2{
+margin-left:5%;
+font-family: 'Roboto', sans-serif;
+font-size:20pt;
+color:#5E5E5E;
+margin-top:-3%;
+}
+#con #title #dev{
+margin-top:-2%;
+}
+#con #title #dev h3{
+display:inline;
+margin-left:5%;
+font-family: 'Roboto', sans-serif;
+font-size:16pt;
+color:#7A7A7A;
+
+}
+#con #title #dev h4{
+display:inline;
+
+
+float:right;
+margin-top:-.5pt;
+margin-right:5%;
+font-family: 'Roboto', sans-serif;
+font-size:16pt;
+color:#7A7A7A;
+}
+#con .stage{
+text-align:left;
+}
+#con .stage h1{
+font-family: 'Raleway', sans-serif;
+font-size:20pt;
+color:#5e5e5e;
+}
+#con .stage h2{
+font-family: 'Roboto', sans-serif;
+font-size:15pt;
+color:#5e5e5e;
+margin-top:-2%;
+}
+#con .stage p{
+font-family: 'Roboto', sans-serif;
+font-size:15pt;
+color:#5e5e5e;
+
+}
+
+#con #gallery  #row1 {
+width:100%;
+display: inline-flex;
+}
+#con #gallery  #row1 .small img{
+width:190px;
+height:180px;
+padding-right:4px;
+}
+#con #gallery  #row1 .big img{
+width:260px;
+height:180px;
+padding-right:4px;
+
+}
+#con #gallery  #row2 {
+width:100%;
+display: inline-flex;
+}
+#con #gallery  #row2 .small img{
+width:190px;
+height:180px;
+padding-right:4px;
+}
+#con #gallery  #row2 .big img{
+width:260px;
+height:180px;
+
+padding-right:4px;
+}
+#con #video video{
+width:790px;
+height:450;
+}
+footer {
+width:100%;
+height:300px;
+position:absolute;
+background:#000;
+bottom:0;
+
+}
+footer img{
+width:250px;
+height:250px;
+margin-top:25px;
+margin-left:50px
+
+}
+footer #foot{
+width:1020px;
+margin:auto;
+
+}
+footer #foot #about{
+display:inline-block;
+width:400px;
+color:#fff;
+margin-left:20px;
+margin-top:-20px;
+font-family: 'Roboto', sans-serif;
+}
+footer #foot #contact{
+float:right;
+width:200px;
+color:#fff;
+margin-right:70px;
+margin-top:80px;
+font-family: 'Roboto', sans-serif;
+}
