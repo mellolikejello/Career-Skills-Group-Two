@@ -60,7 +60,7 @@ header li {
 	float: right;
 	padding-left: 0.5em;
 	padding-right:1em;
-	padding-top:4.5vh;
+	padding-top:3vh;
 	text-decoration:none;
 	color:#fff;
 	font-family: 'Raleway', sans-serif;
@@ -94,7 +94,6 @@ header li {
 
 #content {
 	background-color: white;
-	padding-top:10vh;
 	margin:auto;
 }
 
@@ -102,15 +101,15 @@ header li {
 	clear: both;
 	margin: auto;
 	width: 90%;
-	margin-top:20px;
+	padding-top: 100px;
 }
 
-.project:nth-child(1){
-	padding-top: 2em;
+.project:last-child{
+	padding-bottom: 100px;
 }
 
 #content img {
-	width: 600px;
+	width: 60%;
 }
 
 .float-left {
@@ -123,23 +122,25 @@ header li {
 	float: right;
 }
 
+.project h3 {
+	margin-top: 0;
+}
+
 .project-info_R {
-	height: 187px;
-	width:400px;
+	width: 30%;
 	clear:right;
-	float: right;
-	margin-right:100px;
+	float: left;
+	padding-left: 3%;
 }
 
 .project-info_L {
-	height: 187px;
-	width:400px;
+	width: 30%;
 	clear:left;
 	float: left;
-	margin-left:100px;
+	padding-left: 3%;
 }
 
-footer #foot{
+#foot{
 	height: 400px;
 	width:100%;
 	background-color: #000;
@@ -147,7 +148,7 @@ footer #foot{
 	clear: both;
 }
 
-footer img {
+#foot img {
 	clear: left;
 	float: left;
 	width:300px;
@@ -165,7 +166,7 @@ footer img {
 
 #foot #contact{
 	float: right;
-	width: 10%;
+	width: 15%;
 	margin-right:20%;
 	margin-top:5%;
 }
