@@ -42,6 +42,7 @@ header li {
 #welcome-view {
 	background-color: #000;
 	background-image: url("../Images/topPhoto.jpg");
+	background-size: auto 175%;
 	color: white;
 	height: 95vh;
 	width: 100%;
