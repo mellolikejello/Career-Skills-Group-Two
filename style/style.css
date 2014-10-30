@@ -41,8 +41,6 @@ header li {
 
 #welcome-view {
 	background-color: #000;
-	background-image: url("../Images/topPhoto.jpg");
-	background-size: auto 175%;
 	color: white;
 	height: 95vh;
 	width: 100%;
@@ -62,7 +60,7 @@ header li {
 	float: right;
 	padding-left: 0.5em;
 	padding-right:1em;
-	padding-top:3vh;
+	padding-top:4.5vh;
 	text-decoration:none;
 	color:#fff;
 	font-family: 'Raleway', sans-serif;
@@ -94,12 +92,9 @@ header li {
 	color:#fff;
 }
 
-#welcome-arrow {
-	/* in progress */
-}
-
 #content {
 	background-color: white;
+	padding-top:10vh;
 	margin:auto;
 }
 
@@ -107,15 +102,15 @@ header li {
 	clear: both;
 	margin: auto;
 	width: 90%;
-	padding-top: 100px;
+	margin-top:20px;
 }
 
-.project:last-child{
-	padding-bottom: 100px;
+.project:nth-child(1){
+	padding-top: 2em;
 }
 
 #content img {
-	width: 60%;
+	width: 600px;
 }
 
 .float-left {
@@ -128,32 +123,23 @@ header li {
 	float: right;
 }
 
-.project h3 {
-	margin-top: 0;
-}
-
 .project-info_R {
-	width: 30%;
+	height: 187px;
+	width:400px;
 	clear:right;
-	float: left;
-	padding-left: 3%;
+	float: right;
+	margin-right:100px;
 }
 
 .project-info_L {
-	width: 30%;
+	height: 187px;
+	width:400px;
 	clear:left;
 	float: left;
-	padding-left: 3%;
+	margin-left:100px;
 }
 
-button {
-	background: white;
-	border: 2px solid black;
-	font-family: 'Raleway', sans-serif;
-	padding: 10px;
-}
-
-#foot{
+footer #foot{
 	height: 400px;
 	width:100%;
 	background-color: #000;
@@ -161,7 +147,7 @@ button {
 	clear: both;
 }
 
-#foot img {
+footer img {
 	clear: left;
 	float: left;
 	width:300px;
@@ -179,7 +165,7 @@ button {
 
 #foot #contact{
 	float: right;
-	width: 15%;
+	width: 10%;
 	margin-right:20%;
 	margin-top:5%;
 }
