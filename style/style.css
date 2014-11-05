@@ -1,3 +1,14 @@
+/*
+
+breakpoints
+
+mobile: 320;
+tablet: 768;
+
+@media(max-width: 321px)
+@media(max-width: 769px)
+
+*/
 
 body {
 	font-family: 'Roboto', sans-serif;
@@ -41,6 +52,8 @@ header li {
 
 #welcome-view {
 	background-color: #000;
+	background-image: url("../Images/topPhoto.jpg");
+	background-size: auto 175%;
 	color: white;
 	height: 95vh;
 	width: 100%;
@@ -60,7 +73,7 @@ header li {
 	float: right;
 	padding-left: 0.5em;
 	padding-right:1em;
-	padding-top:4.5vh;
+	padding-top:3vh;
 	text-decoration:none;
 	color:#fff;
 	font-family: 'Raleway', sans-serif;
@@ -92,25 +105,29 @@ header li {
 	color:#fff;
 }
 
+#welcome-arrow {
+	/* in progress */
+}
+
 #content {
 	background-color: white;
-	padding-top:10vh;
 	margin:auto;
+	min-height: 1100px;
 }
 
 .project {
 	clear: both;
 	margin: auto;
 	width: 90%;
-	margin-top:20px;
+	padding-top: 100px;
 }
 
-.project:nth-child(1){
-	padding-top: 2em;
+.project:last-child{
+	padding-bottom: 100px;
 }
 
 #content img {
-	width: 600px;
+	width: 60%;
 }
 
 .float-left {
@@ -123,23 +140,32 @@ header li {
 	float: right;
 }
 
+.project h3 {
+	margin-top: 0;
+}
+
 .project-info_R {
-	height: 187px;
-	width:400px;
+	width: 30%;
 	clear:right;
-	float: right;
-	margin-right:100px;
+	float: left;
+	padding-left: 3%;
 }
 
 .project-info_L {
-	height: 187px;
-	width:400px;
+	width: 30%;
 	clear:left;
 	float: left;
-	margin-left:100px;
+	padding-left: 3%;
 }
 
-footer #foot{
+button {
+	background: white;
+	border: 2px solid black;
+	font-family: 'Raleway', sans-serif;
+	padding: 10px;
+}
+
+#foot{
 	height: 400px;
 	width:100%;
 	background-color: #000;
@@ -147,25 +173,84 @@ footer #foot{
 	clear: both;
 }
 
-footer img {
+#foot #self-img {
 	clear: left;
 	float: left;
 	width:300px;
 	height:300px;
-	margin-left: 5vh;
-	margin-top:50px;
+	margin-left: 3%;
+	margin-top: 5%;
 }
 
 #foot #about {
 	float: left;
 	width: 33%;
-	margin-left:2%;
+	margin-left:3%;
 	margin-top:5%;
 }
 
+#foot #about h3 {
+	margin: -10px 0 0 0;
+	font-size: 50px;
+}
+
+#foot #about p {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+#foot #icons img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	opacity: 0.65;
+}
+
+#foot #icons img:hover {
+	opacity: 1;
+}
+
 #foot #contact{
-	float: right;
-	width: 10%;
-	margin-right:20%;
+	float: left;
+	width: 15%;
+	margin-left:3%;
 	margin-top:5%;
+}
+
+#foot #contact h3{
+	font-size: 24px;
+	margin: 0;
+}
+
+#foot #contact p {
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#foot {
+		height: 950px;
+	}
+
+	#foot #self-portrait {
+		margin-left: 15%;
+		width: 60%;
+	}
+
+	#foot #self-portrait #self-img {
+		height: auto;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#foot #about {
+		clear: left;
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	#foot #contact {
+		clear: left;
+		margin-left: 10%;
+		width: 80%;
+	}
 }
