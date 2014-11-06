@@ -21,6 +21,7 @@ height:400px;
 	position:relative;
 	height:400px;
 	top:auto;
+	width: 100%;
 }
 #image_slider{
 	position: relative;
