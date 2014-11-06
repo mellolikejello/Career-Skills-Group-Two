@@ -23,7 +23,6 @@ height:400px;
 	top:auto;
 }
 #image_slider{
-
 	position: relative;
 	height: auto;
 	list-style: none;
@@ -49,11 +48,11 @@ height:400px;
 	cursor:pointer;
 }
 #prev{
-	background: #000 url('../Images/slider/back.png') no-repeat center;
+	background: url('../Images/slider/left_arrow.png') no-repeat center;
 	left: 0px;
 }
 #next{
-	background: #000 url('../Images/slider/next.png') no-repeat center;
+	background: url('../Images/slider/right_arrow.png') no-repeat center;
 	right: 0px;
 }
 #pager{
