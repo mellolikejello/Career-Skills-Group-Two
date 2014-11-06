@@ -133,14 +133,27 @@ button {
 #content {
 	background-color: white;
 	margin:auto;
-	min-height: 1200px;
+	min-height: 1400px;
 }
 
-@media only screen and (max-width: 1024px) {
+/* still need to be adjusted
+@media only screen and (min-width: 320px) {
 	#content {
-		min-height: 1600px;
+		min-height: 1800px;
 	}
 }
+
+@media only screen and (min-width: 630px) {
+	#content {
+		min-height: 1800px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#content {
+		min-height: 1400px;
+	}
+}*/
 
 .project {
 	clear: both;
@@ -151,6 +164,7 @@ button {
 
 .project img {
 	width: 60%;
+	max-width: 800px;
 }
 
 .float-left {
@@ -234,14 +248,14 @@ button {
 	float: left;
 	width:300px;
 	height:300px;
-	margin-left: 3%;
+	margin-left: 5%;
 	margin-top: 5%;
 }
 
 #foot #about {
 	float: left;
 	width: 33%;
-	margin-left:3%;
+	margin-left:5%;
 	margin-top:5%;
 }
 
@@ -269,7 +283,7 @@ button {
 #foot #contact{
 	float: left;
 	width: 15%;
-	margin-left:3%;
+	margin-left:5%;
 	margin-top:5%;
 }
 
