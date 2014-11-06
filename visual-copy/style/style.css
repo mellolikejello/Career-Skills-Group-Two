@@ -79,6 +79,7 @@ header li {
 	padding-right:1em;
 	padding-top:3vh;
 	text-decoration:none;
+	text-transform: uppercase;
 	color:#fff;
 	font-family: 'Raleway', sans-serif;
 	font-size:18pt;
