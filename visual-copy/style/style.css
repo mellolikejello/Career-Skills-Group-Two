@@ -1,0 +1,327 @@
+/*
+
+breakpoints
+
+mobile: 320;
+tablet: 768;
+
+@media(max-width: 321px)
+@media(max-width: 769px)
+
+*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding:0;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Raleway', sans-serif;
+}
+
+li {
+	display: block;
+	float: left;
+}
+
+header {
+	background: #B8B8B8;
+	padding: 1em 0;
+	width: 100%;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#con{
+	width:100%;
+	position:absolute;
+	top:0;
+}
+
+#static-header {
+	position: relative;
+}
+
+#sticky-header {
+	position: fixed;
+	top: 0;
+}
+
+header li {
+	padding-left: 0.5em;
+}
+
+#welcome-view {
+	background-color: #000;
+	background-image: url("../Images/topPhoto.jpg");
+	background-size: auto 175%;
+	color: white;
+	height: 95vh;
+	width: 100%;
+	margin-top: -20px;
+}
+
+#welcome-header {
+	position: fixed;
+	top: 0;
+	background: #000;
+	width:100%;
+	height: 10vh;
+	margin-top: 0;
+}
+
+#welcome-header a {
+	float: right;
+	padding-left: 0.5em;
+	padding-right:1em;
+	padding-top:3vh;
+	text-decoration:none;
+	color:#fff;
+	font-family: 'Raleway', sans-serif;
+	font-size:18pt;
+	
+}
+
+#welcome-header a:hover{
+	color:#ADADAD;
+	
+}
+
+@media only screen and (max-width: 380px) {
+	#welcome-header a {
+		font-size: 16px;
+		margin-top: 20px;
+		padding: 0;
+		text-align: center;
+		width: 33%
+	}
+}
+
+#welcome-text {
+	clear: both;
+	padding-top: 30vh;
+	padding-left: 5vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 70px;
+	color:#fff;
+	font-weight:100;
+}
+
+#skill-text {
+	clear: both;
+	margin-top: -40px;
+	padding-left: 5vh;
+	font-family: 'Raleway', sans-serif;
+	font-size:24px;
+	color:#fff;
+}
+
+#welcome-arrow {
+	/* in progress */
+}
+
+button {
+	background: white;
+	border: 2px solid black;
+	font-family: 'Raleway', sans-serif;
+	padding: 10px;
+}
+
+#content {
+	background-color: white;
+	margin:auto;
+	min-height: 1400px;
+}
+
+/* still need to be adjusted
+@media only screen and (min-width: 320px) {
+	#content {
+		min-height: 1800px;
+	}
+}
+
+@media only screen and (min-width: 630px) {
+	#content {
+		min-height: 1800px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#content {
+		min-height: 1400px;
+	}
+}*/
+
+.project {
+	clear: both;
+	margin: auto;
+	width: 90%;
+	padding-top: 100px;
+}
+
+.project img {
+	width: 60%;
+	max-width: 800px;
+}
+
+.float-left {
+	clear: left;
+	float: left;
+}
+
+.float-right {
+	clear: right;
+	float: right;
+}
+
+.project h3 {
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.project h4 {
+	font-size: 22px;
+}
+
+.project p {
+	font-size: 16px;
+}
+
+.project-info_R {
+	width: 30%;
+	clear:right;
+	float: left;
+	padding-left: 3%;
+}
+
+.project-info_L {
+	width: 30%;
+	clear:left;
+	float: left;
+	padding-left: 3%;
+}
+
+.proj-space {
+	width: 100%;
+	height: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.project {
+		width: 80%;
+	}
+
+	.project img {
+		width: 100%;
+	}
+
+	.project h3 {
+		margin-top: 5%;
+	}
+
+	.float-left, .float-right {
+		clear: both;
+		display: block;
+	}
+
+	.project-info_R, .project-info_L {
+		clear: both;
+		float: left;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+#foot{
+	height: 400px;
+	width:100%;
+	background-color: #000;
+	color:#fff;
+	clear: both;
+}
+
+#foot #self-img {
+	clear: left;
+	float: left;
+	width:300px;
+	height:300px;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+#foot #about {
+	float: left;
+	width: 33%;
+	margin-left:5%;
+	margin-top:5%;
+}
+
+#foot #about h3 {
+	margin: -10px 0 0 0;
+	font-size: 50px;
+}
+
+#foot #about p {
+	font-size: 20px;
+	margin-top: 0;
+}
+
+#foot #icons img {
+	float: left;
+	height: 40px;
+	width: 40px;
+	opacity: 0.65;
+}
+
+#foot #icons img:hover {
+	opacity: 1;
+}
+
+#foot #contact{
+	float: left;
+	width: 15%;
+	margin-left:5%;
+	margin-top:5%;
+}
+
+#foot #contact h3{
+	font-size: 24px;
+	margin: 0;
+}
+
+#foot #contact p {
+	margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#foot {
+		height: 950px;
+	}
+
+	#foot #self-portrait {
+		margin-left: 15%;
+		padding-top: 5%;
+		width: 60%;
+	}
+
+	#foot #self-portrait #self-img {
+		height: auto;
+		width: 100%;
+		margin-left: 0;
+	}
+
+	#foot #about {
+		clear: left;
+		margin-left: 10%;
+		width: 80%;
+	}
+
+	#foot #contact {
+		clear: left;
+		margin-left: 10%;
+		width: 80%;
+	}
+}
