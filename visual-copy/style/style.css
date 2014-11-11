@@ -20,6 +20,10 @@ h1, h2, h3, h4 {
 	font-family: 'Raleway', sans-serif;
 }
 
+h5 {
+	font-size: 16px;
+}
+
 li {
 	display: block;
 	float: left;
@@ -94,6 +98,12 @@ header li {
 #welcome-header #home-link {
 	float: left;
 	padding-left: 5%;
+}
+
+@media only screen and (max-width: 380px) {
+	#welcome-header #home-link {
+		padding-left: 0;
+	}
 }
 
 @media only screen and (max-width: 380px) {
