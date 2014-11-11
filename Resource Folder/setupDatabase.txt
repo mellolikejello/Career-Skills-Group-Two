@@ -1,0 +1,131 @@
+-- phpMyAdmin SQL Dump
+-- version 4.1.8
+-- http://www.phpmyadmin.net
+--
+-- Host: localhost
+-- Generation Time: Nov 05, 2014 at 11:11 PM
+-- Server version: 5.5.35-cll-lve
+-- PHP Version: 5.4.23
+
+--
+-- NMCS Portfolio DB Setup
+--
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `NMCS`
+--
+CREATE DATABASE IF NOT EXISTS `NMCS` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `NMCS`;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id` int(40) NOT NULL AUTO_INCREMENT,
+  `pass` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `pass`) VALUES
+(1, 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Footer`
+--
+
+CREATE TABLE IF NOT EXISTS `Footer` (
+  `index` int(1) NOT NULL AUTO_INCREMENT,
+  `desc` text NOT NULL,
+  `pic` varchar(40) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `phone` varchar(40) NOT NULL,
+  `facebook` varchar(100) NOT NULL,
+  `twitter` varchar(100) NOT NULL,
+  `tumblr` varchar(100) NOT NULL,
+  `pintrest` varchar(100) NOT NULL,
+  `dribble` varchar(100) NOT NULL,
+  `github` varchar(100) NOT NULL,
+  PRIMARY KEY (`index`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `Footer`
+--
+
+INSERT INTO `Footer` (`index`, `desc`, `pic`, `email`, `phone`, `facebook`, `twitter`, `tumblr`, `pintrest`, `dribble`, `github`) VALUES
+(1, 'write about yourself', 'Images/footer/LOCO.jpg', 'write about yourself', '555-555-555', '', '', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Main`
+--
+
+CREATE TABLE IF NOT EXISTS `Main` (
+  `index` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(40) NOT NULL,
+  `skill1` varchar(40) NOT NULL,
+  `skill2` varchar(40) NOT NULL,
+  `skill3` varchar(40) NOT NULL,
+  `backphoto` varchar(40) NOT NULL,
+  `resume` varchar(40) NOT NULL,
+  PRIMARY KEY (`index`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `Main`
+--
+
+INSERT INTO `Main` (`index`, `name`, `skill1`, `skill2`, `skill3`, `backphoto`, `resume`) VALUES
+(1, 'Firstname Lastname', 'Skill1', 'Skill2', 'Skill3', 'Images/home/stripe.png', 'resume.pdf');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Projects`
+--
+
+CREATE TABLE IF NOT EXISTS `Projects` (
+  `index` int(11) NOT NULL AUTO_INCREMENT,
+  `Order` int(10) NOT NULL,
+  `filename` varchar(40) NOT NULL,
+  `Title` varchar(64) NOT NULL,
+  `Subtitle` varchar(64) NOT NULL,
+  `main_desc` text NOT NULL,
+  `mainImg` varchar(40) NOT NULL,
+  `devordes` varchar(40) NOT NULL,
+  `devices` varchar(120) NOT NULL,
+  `length` int(40) NOT NULL,
+  `s1` varchar(40) NOT NULL,
+  `s2` varchar(40) NOT NULL,
+  `s3` varchar(40) NOT NULL,
+  `s4` varchar(40) NOT NULL,
+  `s5` varchar(40) NOT NULL,
+  `s6` varchar(40) NOT NULL,
+  `stage_1_weeks` int(40) NOT NULL,
+  `stage_1_desc` text NOT NULL,
+  `t1` varchar(40) NOT NULL,
+  `t2` varchar(40) NOT NULL,
+  `t3` varchar(40) NOT NULL,
+  `t4` varchar(40) NOT NULL,
+  `t5` varchar(40) NOT NULL,
+  `t6` varchar(40) NOT NULL,
+  `t7` varchar(40) NOT NULL,
+  `t8` varchar(40) NOT NULL,
+  `stage_2_weeks` int(40) NOT NULL,
+  `stage_2_desc` text NOT NULL,
+  `video` varchar(40) NOT NULL,
+  `defTile` varchar(40) NOT NULL,
+  PRIMARY KEY (`index`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;

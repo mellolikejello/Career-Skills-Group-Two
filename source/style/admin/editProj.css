@@ -1,0 +1,94 @@
+body{
+height:100%;
+width:100%;
+margin:0px;
+padding:0px;
+font-family: Futura,"Trebuchet MS",Arial,sans-serif;
+}
+#con{
+width: 1200px;
+height:100%;
+margin:auto;
+margin-top:150px;
+
+}
+.input{
+border:1px solid #000;
+height:30px;
+padding:5px;
+width:200px;
+}
+.num{
+border:1px solid #000;
+height:30px;
+padding:5px;
+width:50px;
+}
+#uploads input{
+height: 30px;
+}
+#uploads{
+float: right;
+
+margin-top: -900px;
+
+}
+#uploads h3{
+font-size:16px;
+color:#666;
+}
+#Stages{
+width:700;
+
+}
+#info{
+width:700;
+
+}
+textarea{
+border:1px solid #000;
+height:120px;
+width:450px;
+padding:5px;
+
+}
+#submit{
+background: #666;
+float: right;
+border: none;
+color: #fff;
+width: 80px;
+height: 30px;
+margin-right: 260px;
+margin-top: -50px;
+
+}
+#submit:hover{
+background:#D4D4D4;
+cursor:pointer;
+
+}
+button{
+color:#fff;
+background:#666;
+border: 2px solid #666;
+
+width:200px;
+height:50px;
+font-size:20px;
+text-decoration:none;
+float:right;
+margin-right: 30px;
+margin-top: -120px;
+
+}
+ button:hover{
+cursor:pointer;
+background:#919191;
+border: 2px solid #919191;
+
+}
+ button a{
+text-decoration:none;
+color:#fff;
+}
